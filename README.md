@@ -1,7 +1,7 @@
 # L4/5 Group 3
 
-..*Nathaniel Berger.
+Nathaniel Berger.
 
-..*Henry Crofts.
+Henry Crofts.
 
-..*Heather Bishop.
+Heather Bishop.
