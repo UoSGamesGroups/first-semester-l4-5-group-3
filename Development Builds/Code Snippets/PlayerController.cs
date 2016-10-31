@@ -4,32 +4,62 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 
-    public bool onLadder;
-    public float climbSpeed;
-    private float climbVelocity;
-    private float gravityStore;
+    public float moveSpeed;
+    public float jumpHeight;
+
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask whatIsGround;
+
+    private bool grounded;
+    private bool doubleJumped;
 
 	// Use this for initialization
 	void Start ()
     {
-        gravityStore = myrigidbody2D.gravityScale;
+	    
 	}
+
+    void FixedUpdate()
+    {
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (onLadder) // Checks if player is on the ladder.
+
+        if (grounded)
         {
-            myrigidbody2D.gravityScale = 0f;  // Sets gravity of player to 0 to allow ability to climb game world.
-
-            climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");  // Uses the vertical axis to climb the ladder.
-
-            myrigidbody2D.Velocity = new Vector2(myrigidbody2D.velocity.x, climbVelocity);  
+            doubleJumped = false;
         }
 
-        if (!onLadder)
+        if (Input.GetKeyDown (KeyCode.Space)  && grounded)  // Checks that space button is checked & that you are on the "ground"
         {
-            myrigidbody2D.gravityScale = gravityStore;  // Resets players gravity to set scale when player leaves the ladder.
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent <Rigidbody2D>().velocity.x, jumpHeight);  -  Commented out to show example for later reference.
+            Jump();
         }
-	}
+
+        if(Input.GetKeyDown(KeyCode.Space) && !doubleJumped && !grounded)  // 
+        {
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);   -  Commented out to show example for later reference.
+            Jump();
+            doubleJumped = true;
+        }
+
+        if (Input.GetKey(KeyCode.D))  // Move Player Right
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        }
+
+        if (Input.GetKey(KeyCode.A))  // Move Player Left
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        }
+    }
+
+    public void Jump()  // Enables you to write Jump(); instead of code below to make code look neater and shorter
+    {
+        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+    }
 }
