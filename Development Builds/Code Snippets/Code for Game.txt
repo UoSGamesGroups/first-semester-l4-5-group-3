@@ -1,0 +1,49 @@
+using UnityEngine;
+using System.Collections;
+
+public class NewBehaviourScript : MonoBehaviour {
+	public float speed = 5; //setting speed
+
+
+	public Rigidbody2D rb;//declaring that the rigid body (the invisible child) can be touched
+	// Use this for initialization
+	void Start () {
+	
+	}
+
+	// Update is called once per frame
+	void Update () {
+
+	}
+
+	void OnTriggerEnter2D(Collider2D col)
+	{	
+		speed = Random.Range (2, 5); //allowing a range of velocity
+		rb.velocity = new Vector3 (0, speed, 0); //sets the velocity up within a range not a set value
+		if(col.gameObject.name == "elevator") //once you touch one, it destroys itself 
+		{
+			Destroy(col.gameObject); //the plan was to spawn in multiple onces in a set area so it looks like it is hovering.
+		}
+
+	} //this area is for the spawning of invisible blocks so they can rise up but I don't know where to start.
+
+}
+
+//-----------------------------------------------------
+//Next part of the code: The door
+
+public int heroScore =0; //initialises the score and updates the score
+
+void OnCollisionEnter2D(Collision2D col)
+	{
+		if (col.gameObject.tag == ("Exit")) { //must have another level and edit where appropiate such as names
+			Application.LoadLevel (level); //loads level
+		}
+		if (col.gameObject.tag == ("ITEM")) { //if the Hero is in contact with any sprite from the tag "ITEM" then destroy the object
+					Destroy (col.gameObject); //this destroys the item so you can't collect it twice. 
+					heroScore += 1;
+					scoreText.text = "SCORE: " + heroScore.ToString (); //this updates the score everytime you collect an item. 
+				}
+				if (heroScore > 4) {
+					scoreText.text = "OPEN DOOR"; //Displays text instead at the moment. I can't load the level yet as I have no other level to load.
+									// maybe when compliling it, you could test with a level?
