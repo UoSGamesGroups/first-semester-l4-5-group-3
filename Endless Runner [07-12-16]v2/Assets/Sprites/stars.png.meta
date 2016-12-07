@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: e234d686c810d2048a6709be64a88305
+timeCreated: 1481034918
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: stars_0
+    21300002: stars_1
+    21300004: stars_2
+    21300006: stars_3
+    21300008: stars_4
+    21300010: stars_5
+    21300012: stars_6
+    21300014: stars_7
+    21300016: stars_8
+    21300018: stars_9
+    21300020: stars_10
+    21300022: stars_11
+    21300024: stars_12
+    21300026: stars_13
+    21300028: stars_14
+    21300030: stars_15
+    21300032: stars_16
+    21300034: stars_17
+    21300036: stars_18
+    21300038: stars_19
+    21300040: stars_20
+    21300042: stars_21
+    21300044: stars_22
+    21300046: stars_23
+    21300048: stars_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: stars_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 268
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 268
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 268
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 268
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 268
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 29}
+        - {x: -5.5, y: 29}
+        - {x: -31.5, y: 18}
+        - {x: -31.5, y: -21}
+        - {x: -29.5, y: -29}
+        - {x: 23.5, y: -29}
+        - {x: 21.5, y: -17}
+        - {x: 31.5, y: -1}
+        - {x: 31.5, y: 12}
+    - name: stars_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 201
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 201
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 201
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 201
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_9
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 199
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 30}
+        - {x: -32, y: 21}
+        - {x: -32, y: -9}
+        - {x: -23, y: -30}
+        - {x: 28, y: -30}
+        - {x: 32, y: -3}
+        - {x: 32, y: 11}
+        - {x: 12, y: 30}
+    - name: stars_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 136
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 136
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_12
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 136
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_13
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 136
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_14
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 134
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 30}
+        - {x: -32, y: 21}
+        - {x: -32, y: -9}
+        - {x: -23, y: -30}
+        - {x: 28, y: -30}
+        - {x: 32, y: -3}
+        - {x: 32, y: 11}
+        - {x: 12, y: 30}
+    - name: stars_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 70
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_16
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 70
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_17
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 70
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_18
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 69
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 30}
+        - {x: -32, y: 21}
+        - {x: -32, y: -9}
+        - {x: -23, y: -30}
+        - {x: 28, y: -30}
+        - {x: 32, y: -3}
+        - {x: 32, y: 11}
+        - {x: 12, y: 30}
+    - name: stars_19
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 69
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 30}
+        - {x: -32, y: 21}
+        - {x: -32, y: -9}
+        - {x: -23, y: -30}
+        - {x: 28, y: -30}
+        - {x: 32, y: -3}
+        - {x: 32, y: 11}
+        - {x: 12, y: 30}
+    - name: stars_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_22
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 3
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 29}
+        - {x: -14, y: 29}
+        - {x: -31, y: 16}
+        - {x: -31, y: -9}
+        - {x: -25, y: -29}
+        - {x: 24, y: -29}
+        - {x: 31, y: -12}
+        - {x: 31, y: 14}
+        - {x: 27, y: 23}
+    - name: stars_23
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 2
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 30}
+        - {x: -32, y: 21}
+        - {x: -32, y: -9}
+        - {x: -23, y: -30}
+        - {x: 28, y: -30}
+        - {x: 32, y: -3}
+        - {x: 32, y: 11}
+        - {x: 12, y: 30}
+    - name: stars_24
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 30}
+        - {x: -32, y: 21}
+        - {x: -32, y: -9}
+        - {x: -23, y: -30}
+        - {x: 28, y: -30}
+        - {x: 32, y: -3}
+        - {x: 32, y: 11}
+        - {x: 12, y: 30}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
