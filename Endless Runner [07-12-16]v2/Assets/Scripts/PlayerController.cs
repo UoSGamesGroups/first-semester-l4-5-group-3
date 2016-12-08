@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     //object to spawn exit.
     public GameObject exitObject;
+    public GameObject exitObject2;
     
 	public Vector3 posX = new Vector3(10,0,0);
 	public Vector3 posY = new Vector3(0,2,0);
@@ -54,8 +55,14 @@ public class PlayerController : MonoBehaviour
             scoreText.text = "OPEN DOOR"; //Displays text instead at the moment. I can't load the level yet as I have no other level to load.
                                           // maybe when compliling it, you could test with a level?
 
-			Instantiate(exitObject, transform.position + posX + posY, transform.rotation);
+            Instantiate(exitObject, transform.position + posX + posY, transform.rotation);
             heroScore = 11;
+        }
+        else if (heroScore == 10)
+        {
+            Instantiate(exitObject2, transform.position + posX + posY, transform.rotation);
+            heroScore = 11;
+            Debug.Log("CompletedGame");
         }
     }
 
@@ -82,6 +89,12 @@ public class PlayerController : MonoBehaviour
 			//set wonLevel boolean to true in GameController to run NextLevel();
 			gameController.wonLevel = true;
 		}
+
+        if (col.gameObject.tag == "EndLevel")
+        {
+            //set wonLevel boolean to true in GameController to run NextLevel();
+            gameController.endGame = true;
+        }
 
     }
 

@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
 	public static GameController instance = null; // static instance so it can be accessed by other scripts.
 	public bool gameOver = false;
 	public bool wonLevel = false;
+    public bool endGame = false;
 
 
 
@@ -52,6 +53,11 @@ public class GameController : MonoBehaviour {
            // FindScoreText ();
             
         }
+
+        if (endGame)
+        {
+
+        }
 	
 	}
 
@@ -66,10 +72,14 @@ public class GameController : MonoBehaviour {
 		Debug.Log ("Game Over");
         gameOver = false;
         SceneManager.LoadScene (3);
-       // FindScoreText();
-        
-		
+       // FindScoreText();	
 	}
+
+    public void EndGame()
+    {
+        endGame = false;
+        SceneManager.LoadScene(3);
+    }
 
 
 	//public void FindScoreText()
