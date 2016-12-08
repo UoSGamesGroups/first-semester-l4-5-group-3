@@ -5,22 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-
+    #region Player Movement
     public float moveSpeed;
     public float jumpHeight;
 
     public bool grounded = true;
-    public bool doubleJump = false;
-    
     private Rigidbody2D rb;
+    #endregion
 
     public int heroScore = 0; //initialises the score and updates the score
+
+    #region Text
     public Text scoreText;
     public Text exitText;
+    #endregion
 
     //object to spawn exit.
     public GameObject exitObject;
-    
     
 	public Vector3 posX = new Vector3(10,0,0);
 	public Vector3 posY = new Vector3(0,2,0);
@@ -39,20 +40,13 @@ public class PlayerController : MonoBehaviour
     {
         //Movement
         rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-        //GetComponent<SpriteRenderer>().flipX = true;
+        GetComponent<SpriteRenderer>().flipX = true;
 
         //Jump
         if (Input.GetKey(KeyCode.Space) && grounded == true)
         {
             grounded = false;
-            doubleJump = false;
-            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
-        }
-
-        if (Input.GetKey(KeyCode.Space) && grounded == false && doubleJump == false)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
-            doubleJump = true;
+            Jump();
         }
 
         if (heroScore == 10)
@@ -61,32 +55,9 @@ public class PlayerController : MonoBehaviour
                                           // maybe when compliling it, you could test with a level?
 
 			Instantiate(exitObject, transform.position + posX + posY, transform.rotation);
-            rb.velocity = new Vector2(0, 0);
             heroScore = 11;
-            
         }
-
-        //if (spawnExit && amountOFExits == 1)
-        //{
-        //    amountOFExits = 1;
-        //    spawnExit = false;
-        //    GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>().DisableCamera();
-        //    transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-        //    Instantiate(exitObject, transform.position, transform.rotation);
-
-        //}
     }
-
-   
-
-    //void ExitGame()
-    //{
-    //    Instantiate(exitObject, transform.position, transform.rotation);
-    //    rb.velocity = new Vector2(0, 0);
-
-    //}
-
-
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -123,9 +94,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //public void Jump()  // Enables you to write Jump(); instead of code below to make code look neater and shorter
-    //{
-    //    rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
-    //}
+    public void Jump()  // Enables you to write Jump(); instead of code below to make code look neater and shorter
+    {
+        rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+    }
 
 }

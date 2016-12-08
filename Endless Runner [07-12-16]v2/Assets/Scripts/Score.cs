@@ -19,10 +19,11 @@ public class Score : MonoBehaviour {
 	void OnDisable(){
 		         
 		//If our scoree is greter than highscore, set new higscore and save.
-		if(score>highScore){
+		if(score>highScore)
+        {
 			PlayerPrefs.SetInt(highScoreKey, score);
 			PlayerPrefs.Save();
-		         }
+		}
 	}
 
 	public void ClearPlayerPref()

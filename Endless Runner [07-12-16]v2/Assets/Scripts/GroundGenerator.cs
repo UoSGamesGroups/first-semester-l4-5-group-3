@@ -16,11 +16,17 @@ public class GroundGenerator : MonoBehaviour
 
 
 	//object to spawn items. (pages)
-	public GameObject item;
+	public GameObject[] item;
     public Vector3 itemY = new Vector3(0, 1, 0);
+    //public float pageDistance;
 
-	// Use this for initialization
-	void Start ()
+    //public float pDistanceMin;
+    //public float pDistanceMax;
+    //public GameObject[] objectsToSpawn;
+    //public GameObject spawnPoint;
+
+    // Use this for initialization
+    void Start ()
     {
         platformWidth = ground.GetComponent<BoxCollider2D>().size.x;
 	}
@@ -37,8 +43,19 @@ public class GroundGenerator : MonoBehaviour
 
             Instantiate(ground, transform.position, transform.rotation);
 
-            Instantiate(item, transform.position + itemY, transform.rotation);
+            //pageDistance = Random.Range(pDistanceMin, pDistanceMax);
+
+            //transform.position = new Vector3(transform.position.x + pageDistance, transform.position.y, transform.position.z);
+
+            //Instantiate(item[5], transform.position + itemY, transform.rotation);
+
+
+
+            Instantiate(item[Random.Range(0, item.Length)], transform.position + itemY, transform.rotation);
+            
         }
-	}
+    }
+	
+
 
 }
