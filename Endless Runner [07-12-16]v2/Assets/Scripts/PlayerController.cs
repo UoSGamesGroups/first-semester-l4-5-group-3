@@ -86,9 +86,9 @@ public class PlayerController : MonoBehaviour
 
 		if (col.gameObject.tag == "Finish") 
 		{
-			//set wonLevel boolean to true in GameController to run NextLevel();
-			gameController.wonLevel = true;
-		}
+            //set wonLevel boolean to true in GameController to run NextLevel();
+            gameController.wonLevel = true;
+        }
 
         if (col.gameObject.tag == "EndLevel")
         {
@@ -98,8 +98,16 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Finish")
+        {
+            Destroy(other.gameObject);
+        }
+    }
 
-    void OnCollisionStay2D(Collision2D col)
+
+void OnCollisionStay2D(Collision2D col)
     {
         if (col.gameObject.tag == "Ground")
         {
