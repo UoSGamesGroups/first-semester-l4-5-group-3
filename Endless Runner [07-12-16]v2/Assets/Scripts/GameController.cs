@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
 	public bool gameOver = false;
 	public bool wonLevel = false;
     public bool endGame = false;
+    public bool levl1Comp = false; //Check if level one has been completed.
 
 
 
@@ -56,7 +57,7 @@ public class GameController : MonoBehaviour {
 
         if (endGame)
         {
-
+            EndGame();
         }
 	
 	}

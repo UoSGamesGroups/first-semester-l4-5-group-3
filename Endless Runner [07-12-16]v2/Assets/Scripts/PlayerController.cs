@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 	public Vector3 posY = new Vector3(0,2,0);
 
 	GameController gameController;
+    private bool level1Comp = false; //Check if level one has been completed.
 
     void Start ()
     {
@@ -54,16 +55,19 @@ public class PlayerController : MonoBehaviour
         {
             scoreText.text = "OPEN DOOR"; //Displays text instead at the moment. I can't load the level yet as I have no other level to load.
                                           // maybe when compliling it, you could test with a level?
-
-            Instantiate(exitObject, transform.position + posX + posY, transform.rotation);
-            heroScore = 11;
-        }
-        else if (heroScore == 10)
-        {
+            
+            if(level1Comp == false)
+            {   Instantiate(exitObject, transform.position + posX + posY, transform.rotation);
+                heroScore = 11;
+                level1Comp = true;
+            }
+            }
+             else if (heroScore == 10)
+            {
             Instantiate(exitObject2, transform.position + posX + posY, transform.rotation);
             heroScore = 11;
             Debug.Log("CompletedGame");
-        }
+            }
     }
 
     void OnCollisionEnter2D(Collision2D col)
