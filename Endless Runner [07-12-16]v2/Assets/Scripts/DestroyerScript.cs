@@ -15,7 +15,7 @@ public class DestroyerScript : MonoBehaviour
         {
             Destroy(other.gameObject.transform.parent.gameObject);
         }
-        else
+        else     // Jesse Freeman - Lynda Tutorial.
         {
             Destroy(other.gameObject);
         }
